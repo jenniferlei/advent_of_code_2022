@@ -1,6 +1,6 @@
 ########### PART 1 ###########
 def max_calories_carried(file_name):
-    ''''''
+    """Returns Calories of Elf carrying the most Calories"""
     log_file = open(file_name)
     
     max_calories, current_calories = 0, 0
@@ -19,6 +19,7 @@ def max_calories_carried(file_name):
 
 ########### PART 2 ###########
 def top_three_calories(file_name):
+    """Returns sum of Calories of top three Elves carrying the most Calories"""
     log_file = open(file_name)
     
     top_three_cal = [0]
