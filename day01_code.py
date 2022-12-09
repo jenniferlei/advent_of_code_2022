@@ -1,14 +1,5 @@
-log_file = open("day01_input.txt")
-
-# Find the Elf carrying the most Calories. How many total Calories is that Elf carrying?
-
-# max = 0
-# current = 0
-# while each line is not blank, add to current.
-# update max to current is greater than max
-# return max
-
-def most_calories(file_name):
+########### PART 1 ###########
+def max_calories_carried(file_name):
     ''''''
     log_file = open(file_name)
     
@@ -25,17 +16,9 @@ def most_calories(file_name):
             
     return max_calories
 
-print(most_calories("day01_input.txt"))
 
-# Find the top three Elves carrying the most Calories. How many Calories are those Elves carrying in total?
-
-# array of top three
-# if sum is greater than the min num in array, add to array
-# if the array size is greater than 3, remove min num
-
-
-
-def top_three(file_name):
+########### PART 2 ###########
+def top_three_calories(file_name):
     log_file = open(file_name)
     
     top_three_cal = [0]
@@ -55,5 +38,3 @@ def top_three(file_name):
             current_calories = 0
             
     return sum(top_three_cal)
-
-print(top_three("day01_input.txt"))
